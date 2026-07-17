@@ -147,7 +147,7 @@
         <!-- Khung Player của NhacCuaTui -->
         <div class="player-wrapper">
              <audio controls>
-        <source src="https://nhaccuatui.com/mh/background/L62gXmbyg7bM/type="audio/mpeg">
+        <source src="https://nhac.vn/bai-hat/xin-dung-lang-im-soobin-hoang-son-soqXPxo/type="audio/mpeg">
         Trình duyệt của bạn không hỗ trợ thẻ audio.
     </audio></iframe>
         </div>
