@@ -48,7 +48,7 @@ body { background:#000; color:#fff; font-family:Arial; overflow:hidden; }
 </div>
 
 <!-- KHUNG HIỂN THỊ -->
-<iframe id="browser" src="https://www.google.com"></iframe>
+<iframe id="browser" src="https://duckduckgo.com/"></iframe>
 
 <!-- BÀN PHÍM ĐIỀU KHIỂN -->
 <div class="dpad">
@@ -75,7 +75,7 @@ function go(){
   if(!u) return;
   if(!u.startsWith('http')){
     if(u.includes('.')) u = 'https://' + u;
-    else u = 'https://www.google.com/search?q=' + encodeURIComponent(u);
+    else u = 'https://duckduckgo.com/?ia=' + encodeURIComponent(u);
   }
 
   // Xử lý Youtube
