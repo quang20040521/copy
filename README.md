@@ -6,16 +6,7 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { background:#000; color:#fff; font-family:Arial; overflow:hidden; }
-.topbar { background:#1a1a1a; padding:5px; position:fixed; top:0; width:100%; z-index:100; display:flex; gap:3px; }
-.topbar input { flex:1; padding:8px; font-size:15px; background:#333; color:#fff; border:1px solid #555; }
-.topbar button { padding:8px 10px; background:#d32f2f; color:#fff; border:none; font-weight:bold; }
-#browser { width:100%; height:100vh; border:none; margin-top:45px; margin-bottom:90px; }
-.dpad { position:fixed; bottom:0; width:100%; background:#111; padding:5px; text-align:center; display:grid; grid-template-columns:1fr 1fr 1fr; gap:3px; }
-.dpad button { padding:12px; font-size:18px; background:#333; color:#fff; border:1px solid #555; border-radius:5px; }
-.dpad.wide { grid-column: span 3; background:#444; }
-.dpad.nav { background:#1976d2; }
-</style>
-</head>
+
 <body>
 <div class="topbar">
   <button onclick="goBack()">←</button>
