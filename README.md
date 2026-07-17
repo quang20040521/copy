@@ -27,10 +27,8 @@
 </head>
 <body>
 
-    <div class="header">
-        <input type="text" id="urlInput" placeholder="Dán link bất kỳ vào đây... vd: https://google.com">
-        <button id="goBtn" onclick="loadURL()">Xem</button>
-        <div class="header">
+    
+     <div class="header">
         <input type="text" id="searchInput" placeholder="Tìm kiếm Google hoặc dán link Youtube, MP4...">
         <button onclick="handleSearch()">Tìm / Phát</button>
     </div>
