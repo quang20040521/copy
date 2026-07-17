@@ -146,7 +146,10 @@
         
         <!-- Khung Player của NhacCuaTui -->
         <div class="player-wrapper">
-            <iframe id="nct-player" src="https://www.nhaccuatui.com/mh/background/" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+             <audio controls>
+        <source src="https://nhaccuatui.com/mh/background/"nctId"/type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ thẻ audio.
+    </audio></iframe>
         </div>
 
         <!-- Danh sách bài hát -->
