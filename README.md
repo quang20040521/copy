@@ -37,6 +37,6 @@
         <!-- KHUNG 1: TÌM KIẾM GOOGLE -->
         <div class="box">
             <h2>🔍 Tìm kiếm Google</h2>
-            <iframe id="googleFrame" src="https://www.google.com" style="width:100%; height:400px; border:none; border-radius:8px;"></iframe>
+            <iframe id="googleFrame" src="https://www.youtube.com" style="width:100%; height:400px; border:none; border-radius:8px;"></iframe>
         </div>
     </div>
