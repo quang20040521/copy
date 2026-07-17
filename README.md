@@ -1,4 +1,4 @@
-                            <!DOCTYPE html>
+                          
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -30,6 +30,15 @@
     <div class="header">
         <input type="text" id="urlInput" placeholder="Dán link bất kỳ vào đây... vd: https://google.com">
         <button id="goBtn" onclick="loadURL()">Xem</button>
+        <div class="header">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm Google hoặc dán link Youtube, MP4...">
+        <button onclick="handleSearch()">Tìm / Phát</button>
     </div>
 
-    <iframe id="viewer" src="about:
+    <div class="container">
+        <!-- KHUNG 1: TÌM KIẾM GOOGLE -->
+        <div class="box">
+            <h2>🔍 Tìm kiếm Google</h2>
+            <iframe id="googleFrame" src="https://www.google.com" style="width:100%; height:400px; border:none; border-radius:8px;"></iframe>
+        </div>
+    </div>
