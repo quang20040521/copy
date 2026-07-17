@@ -24,7 +24,7 @@ body { background:#000; color:#fff; font-family:Arial; overflow:hidden; }
   <button onclick="go()">GO</button>
 </div>
 
-<iframe id="browser" src="https://bing.com/"></iframe>
+<iframe src="https://www.bing.com/search?q=" style="width:100%; height:500px;"></iframe>
 
 <div class="dpad">
   <button onclick="scrollY(-200)">↑ Lên</button>
