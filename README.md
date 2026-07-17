@@ -40,31 +40,6 @@
   <button onclick="zoom(1)">Reset</button>
   <button onclick="zoom(1.2)">+ Phong to</button>
 </div>
-
-<script>
-let scale = 1;
-
-function go(){
-  let u = document.getElementById('url').value;
-  if(!u) return;
-  if(!u.startsWith('http')) u = 'https://' + u;
-
-  // Nếu dán link youtube thì tự chuyển sang dạng nhúng
-  if(u.includes('youtube.com') || u.includes('youtu.be')){
-    let id = u.split('v=')[1]?u.split('v=')[1].split('&')[0]:u.split('/').pop();
-    u = 'https://www.youtube.com/embed/' + id;
-  }
-  // Nếu là chữ thường thì tìm google
-  else if(!u.includes('.')){
-    u = 'https://www.google.com/search?q=' + encodeURIComponent(u);
-  }
-
-  document.getElementById('viewer').src = u;
-}
-
-    <div class="container">
-        <!-- KHUNG 1: TÌM KIẾM GOOGLE -->
-        <div class="box">
             <h2>Hello xem vui vẻ</h2>
             <iframe id="googleFrame" src="https://animevietsub.meme/" style="width:100%; height:600px; border:none; border-radius:8px;"></iframe>
         </div>
