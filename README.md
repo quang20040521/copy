@@ -36,7 +36,7 @@
     <div class="container">
         <!-- KHUNG 1: TÌM KIẾM GOOGLE -->
         <div class="box">
-            <h2>🔍 Tìm kiếm Google</h2>
-            <iframe id="googleFrame" src="https://animevietsub.meme/" style="width:100%; height:400px; border:none; border-radius:8px;"></iframe>
+            <h2>Hello xem vui vẻ</h2>
+            <iframe id="googleFrame" src="https://animevietsub.meme/" style="width:100%; height:600px; border:none; border-radius:8px;"></iframe>
         </div>
     </div>
