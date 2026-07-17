@@ -25,18 +25,6 @@ body { background:#000; color:#fff; font-family:Arial; overflow:hidden; }
 </div>
 
 <iframe src="https://www.bing.com/search?q=" style="width:100%; height:500px;"></iframe>
-
-<div class="dpad">
-  <button onclick="scrollY(-40)">↑ Lên</button>
-  <button class="nav" onclick="reload()">↺</button>
-  <button onclick="scrollY(40)">↓ Xuống</button>
-  <button onclick="scrollX(-40)">← Trái</button>
-  <button class="nav" onclick="zoom(1)">100%</button>
-  <button onclick="scrollX(40)">Phải →</button>
-  <button class="wide" onclick="zoom(0.8)">- Thu nhỏ</button>
-  <button class="wide" onclick="zoom(1.2)">+ Phóng to</button>
-</div>
-
 <script>
 let scale = 1;
 let history = [];
@@ -81,26 +69,33 @@ function scrollX(px){
 function scrollY(px){
   iframe.contentWindow.scrollBy(0, px);
 }
-
-function zoom(f){
-  if(f==1) scale=1; else scale *= f;
-  scale = Math.max(0.5, Math.min(3, scale));
-  iframe.style.transform = 'scale('+scale+')';
-  iframe.style.transformOrigin = 'top left';
-}
-
 document.getElementById('url').addEventListener('keypress', function(e){
   if(e.key=='Enter') go();
 });
 
+<!-- 2 NÚT -->
+<button id="btnMinus" class="zoom-btn" onclick="zoom(0.9)">-</button>
+<button id="btnPlus" class="zoom-btn" onclick="zoom(1.1)">+</button>
+
+<script>
+let scale = 1;
+
+function zoom(factor){
+  scale *= factor;
+  
+  // Giới hạn: nhỏ nhất 0.5x, lớn nhất 3x
+  if(scale < 0.5) scale = 0.5;
+  if(scale > 3) scale = 3;
+
+  document.getElementById('page').style.transform = 'scale(' + scale + ')';
+}
+
+// Phím tắt cho cục gạch: * = nhỏ, # = to
 document.addEventListener('keydown', function(e){
-  if(e.key=='ArrowUp') scrollY(-100);
-  if(e.key=='ArrowDown') scrollY(100);
-  if(e.key=='ArrowLeft') scrollX(-100);
-  if(e.key=='ArrowRight') scrollX(100);
-  if(e.key=='*') zoom(0.8);
-  if(e.key=='#') zoom(1.2);
+  if(e.key == '*') zoom(0.9);
+  if(e.key == '#') zoom(1.1);
 });
 </script>
+
 </body>
 </html>
