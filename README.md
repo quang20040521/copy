@@ -27,12 +27,12 @@ body { background:#000; color:#fff; font-family:Arial; overflow:hidden; }
 <iframe src="https://www.bing.com/search?q=" style="width:100%; height:500px;"></iframe>
 
 <div class="dpad">
-  <button onclick="scrollY(-200)">↑ Lên</button>
+  <button onclick="scrollY(-40)">↑ Lên</button>
   <button class="nav" onclick="reload()">↺</button>
-  <button onclick="scrollY(200)">↓ Xuống</button>
-  <button onclick="scrollX(-200)">← Trái</button>
+  <button onclick="scrollY(40)">↓ Xuống</button>
+  <button onclick="scrollX(-40)">← Trái</button>
   <button class="nav" onclick="zoom(1)">100%</button>
-  <button onclick="scrollX(200)">Phải →</button>
+  <button onclick="scrollX(40)">Phải →</button>
   <button class="wide" onclick="zoom(0.8)">- Thu nhỏ</button>
   <button class="wide" onclick="zoom(1.2)">+ Phóng to</button>
 </div>
