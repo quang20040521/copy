@@ -78,21 +78,6 @@ function go(){
     else u = 'https://duckduckgo.com/?ia=' + encodeURIComponent(u);
   }
 
-  // Xử lý Youtube
-  if(u.includes('youtube.com/watch?v=')){
-    let id = u.split('v=')[1].split('&')[0];
-    u = 'https://www.youtube.com/embed/' + id;
-  }
-  if(u.includes('youtu.be/')){
-    let id = u.split('youtu.be/')[1].split('?')[0];
-    u = 'https://www.youtube.com/embed/' + id;
-  }
-
-  iframe.src = u;
-  history.push(u);
-  historyIndex = history.length - 1;
-}
-
 function goBack(){
   if(historyIndex > 0){
     historyIndex--;
