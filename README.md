@@ -24,7 +24,7 @@ body { background:#000; color:#fff; font-family:Arial; overflow:hidden; }
   <button onclick="go()">GO</button>
 </div>
 
-<iframe id="browser" src="https://duckduckgo.com/"></iframe>
+<iframe id="browser" src="https://bing.com/"></iframe>
 
 <div class="dpad">
   <button onclick="scrollY(-200)">↑ Lên</button>
@@ -48,7 +48,7 @@ function go(){
   if(!u) return;
   if(!u.startsWith('http')){
     if(u.includes('.')) u = 'https://' + u;
-    else u = 'https://duckgo.com/?q=' + encodeURIComponent(u); // Đổi ia= thành q=
+    else u = 'https://bing.com/?q=' + encodeURIComponent(u); // Đổi ia= thành q=
   }
 
   iframe.src = u; // Thêm dòng này để load trang
