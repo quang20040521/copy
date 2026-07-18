@@ -139,7 +139,7 @@
 
         <!-- Nhập liệu tối giản -->
         <input type="text" id="input-text" placeholder="Nhập tin nhắn..." autofocus>
-        <button onclick="sendMessage()">GỬI 🚀</button>
+        <button onclick="sendMessage()">GỬI 🚀<iframe src="www.bing.com"</iframe></button>
     </div>
 
     <div class="footer-nav">
